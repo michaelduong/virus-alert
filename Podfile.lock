@@ -1,0 +1,40 @@
+PODS:
+  - ArcGIS-Runtime-SDK-iOS (100.7)
+  - JJLISO8601DateFormatter (0.1.2)
+  - MHWebViewController (1.1.1)
+  - Neon (0.4.0)
+  - PullUpController (0.7.0)
+  - ZippyJSON (1.1.0):
+    - JJLISO8601DateFormatter (~> 0.1.2)
+    - ZippyJSONCFamily (~> 1.1.0)
+  - ZippyJSONCFamily (1.1.0)
+
+DEPENDENCIES:
+  - ArcGIS-Runtime-SDK-iOS (= 100.7)
+  - MHWebViewController (~> 1.0)
+  - Neon
+  - PullUpController
+  - ZippyJSON
+
+SPEC REPOS:
+  trunk:
+    - ArcGIS-Runtime-SDK-iOS
+    - JJLISO8601DateFormatter
+    - MHWebViewController
+    - Neon
+    - PullUpController
+    - ZippyJSON
+    - ZippyJSONCFamily
+
+SPEC CHECKSUMS:
+  ArcGIS-Runtime-SDK-iOS: 9a7e227d6779eaa16119b170b4e7861b02f5d83a
+  JJLISO8601DateFormatter: 06a216365f6c8b0ec33a6ce3750d496f048efb32
+  MHWebViewController: 6269a80674e88744f345a0e96925e3dbf565acd6
+  Neon: 7fb5a9327e7e57911843f608e08f4893a74deaf9
+  PullUpController: 5c8710cb686dca43d5850ae994debb7fdb824b75
+  ZippyJSON: 71604a203bd4a7e68a5922cea5be994f94eb3593
+  ZippyJSONCFamily: 32ba9218e783a6a9d1199053df77d148b9bbd04e
+
+PODFILE CHECKSUM: f797e36e438862aca34349422960a37649a82833
+
+COCOAPODS: 1.8.4

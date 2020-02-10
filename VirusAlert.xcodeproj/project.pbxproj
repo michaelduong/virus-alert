@@ -3,27 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1650D216AE2376AE9C99FD76 /* Pods_VirusAlert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 339F272FB6821A4C110C948E /* Pods_VirusAlert.framework */; };
 		818585CF23F14DD4003A5AAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818585CE23F14DD4003A5AAD /* AppDelegate.swift */; };
 		818585D123F14DD4003A5AAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818585D023F14DD4003A5AAD /* SceneDelegate.swift */; };
-		818585D323F14DD4003A5AAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818585D223F14DD4003A5AAD /* ViewController.swift */; };
+		818585D323F14DD4003A5AAD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818585D223F14DD4003A5AAD /* MainViewController.swift */; };
 		818585D623F14DD4003A5AAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 818585D423F14DD4003A5AAD /* Main.storyboard */; };
 		818585D823F14DD5003A5AAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 818585D723F14DD5003A5AAD /* Assets.xcassets */; };
 		818585DB23F14DD5003A5AAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 818585D923F14DD5003A5AAD /* LaunchScreen.storyboard */; };
+		8191E48D23F1517900BE6C2A /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8191E48C23F1517900BE6C2A /* BaseTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		339F272FB6821A4C110C948E /* Pods_VirusAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VirusAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		818585CB23F14DD4003A5AAD /* VirusAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirusAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		818585CE23F14DD4003A5AAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		818585D023F14DD4003A5AAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		818585D223F14DD4003A5AAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		818585D223F14DD4003A5AAD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		818585D523F14DD4003A5AAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		818585D723F14DD5003A5AAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		818585DA23F14DD5003A5AAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		818585DC23F14DD5003A5AAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8191E48C23F1517900BE6C2A /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		8A9B9B3CC3261FEE53E9F451 /* Pods-VirusAlert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VirusAlert.debug.xcconfig"; path = "Target Support Files/Pods-VirusAlert/Pods-VirusAlert.debug.xcconfig"; sourceTree = "<group>"; };
+		AE50328A59F14C95F5B0B10A /* Pods-VirusAlert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VirusAlert.release.xcconfig"; path = "Target Support Files/Pods-VirusAlert/Pods-VirusAlert.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1650D216AE2376AE9C99FD76 /* Pods_VirusAlert.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06611363D44181356584203B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A9B9B3CC3261FEE53E9F451 /* Pods-VirusAlert.debug.xcconfig */,
+				AE50328A59F14C95F5B0B10A /* Pods-VirusAlert.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		818585C223F14DD4003A5AAD = {
 			isa = PBXGroup;
 			children = (
 				818585CD23F14DD4003A5AAD /* VirusAlert */,
 				818585CC23F14DD4003A5AAD /* Products */,
+				06611363D44181356584203B /* Pods */,
+				9EB88D57AE1378AD676AE14E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +74,64 @@
 		818585CD23F14DD4003A5AAD /* VirusAlert */ = {
 			isa = PBXGroup;
 			children = (
+				8191E48923F1504200BE6C2A /* Model */,
+				8191E48823F1503E00BE6C2A /* View */,
+				8191E48723F1503800BE6C2A /* Controller */,
 				818585CE23F14DD4003A5AAD /* AppDelegate.swift */,
 				818585D023F14DD4003A5AAD /* SceneDelegate.swift */,
-				818585D223F14DD4003A5AAD /* ViewController.swift */,
+				8191E48A23F1504A00BE6C2A /* Helpers */,
+				8191E48B23F1505B00BE6C2A /* Resources */,
+			);
+			path = VirusAlert;
+			sourceTree = "<group>";
+		};
+		8191E48723F1503800BE6C2A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8191E48C23F1517900BE6C2A /* BaseTabBarController.swift */,
+				818585D223F14DD4003A5AAD /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8191E48823F1503E00BE6C2A /* View */ = {
+			isa = PBXGroup;
+			children = (
 				818585D423F14DD4003A5AAD /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8191E48923F1504200BE6C2A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8191E48A23F1504A00BE6C2A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8191E48B23F1505B00BE6C2A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				818585D723F14DD5003A5AAD /* Assets.xcassets */,
 				818585D923F14DD5003A5AAD /* LaunchScreen.storyboard */,
 				818585DC23F14DD5003A5AAD /* Info.plist */,
 			);
-			path = VirusAlert;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9EB88D57AE1378AD676AE14E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				339F272FB6821A4C110C948E /* Pods_VirusAlert.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +141,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 818585DF23F14DD5003A5AAD /* Build configuration list for PBXNativeTarget "VirusAlert" */;
 			buildPhases = (
+				161428D2B68F254320E5F4F0 /* [CP] Check Pods Manifest.lock */,
 				818585C723F14DD4003A5AAD /* Sources */,
 				818585C823F14DD4003A5AAD /* Frameworks */,
 				818585C923F14DD4003A5AAD /* Resources */,
+				22AFB2FB4FCA6B7605DE0931 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +202,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		161428D2B68F254320E5F4F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VirusAlert-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		22AFB2FB4FCA6B7605DE0931 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VirusAlert/Pods-VirusAlert-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VirusAlert/Pods-VirusAlert-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VirusAlert/Pods-VirusAlert-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		818585C723F14DD4003A5AAD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				818585D323F14DD4003A5AAD /* ViewController.swift in Sources */,
+				8191E48D23F1517900BE6C2A /* BaseTabBarController.swift in Sources */,
+				818585D323F14DD4003A5AAD /* MainViewController.swift in Sources */,
 				818585CF23F14DD4003A5AAD /* AppDelegate.swift in Sources */,
 				818585D123F14DD4003A5AAD /* SceneDelegate.swift in Sources */,
 			);
@@ -216,7 +328,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +382,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,37 +394,43 @@
 		};
 		818585E023F14DD5003A5AAD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A9B9B3CC3261FEE53E9F451 /* Pods-VirusAlert.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NELGRQX33K;
-				INFOPLIST_FILE = VirusAlert/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/VirusAlert/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.turntlabs.VirusAlert;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		818585E123F14DD5003A5AAD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE50328A59F14C95F5B0B10A /* Pods-VirusAlert.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NELGRQX33K;
-				INFOPLIST_FILE = VirusAlert/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/VirusAlert/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.turntlabs.VirusAlert;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
