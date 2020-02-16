@@ -58,5 +58,18 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>AVENGEANCE HEROIC AVENGER BD.ttf</string>
+		<string>AVENGEANCE HEROIC AVENGER.ttf</string>
+		<string>AVENGEANCE HEROIC AVENGER AT.ttf</string>
+		<string>Lato-Black.ttf</string>
+		<string>Lato-Bold.ttf</string>
+		<string>Lato-BoldItalic.ttf</string>
+		<string>Lato-Italic.ttf</string>
+		<string>Lato-Regular.ttf</string>
+	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>&quot;For showing your location on the map relative to threat areas&quot;</string>
 </dict>
 </plist>

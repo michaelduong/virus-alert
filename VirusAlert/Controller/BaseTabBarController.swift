@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwifterSwift
 
 class BaseTabBarController: UITabBarController {
 
@@ -14,7 +15,7 @@ class BaseTabBarController: UITabBarController {
         super.viewDidLoad()
         
         viewControllers = [
-            createNavController(viewController: MainViewController(), title: "Stats", imageName: "stats-icon"),
+            createNavController(viewController: StatsViewController(), title: "Stats", imageName: "stats-icon"),
             createNavController(viewController: UIViewController(), title: "News Feed", imageName: "news-icon"),
             createNavController(viewController: UIViewController(), title: "Settings", imageName: "settings-icon")
         ]
@@ -24,7 +25,7 @@ class BaseTabBarController: UITabBarController {
         
         let navController = UINavigationController(rootViewController: viewController)
         navController.navigationBar.prefersLargeTitles = true
-        viewController.view.backgroundColor = .white
+        navController.navigationBar.setTitleFont(R.font.latoBlack(size: 36)!)
         viewController.navigationItem.title = title
         navController.tabBarItem.title = title
         navController.tabBarItem.image = UIImage(named: imageName)

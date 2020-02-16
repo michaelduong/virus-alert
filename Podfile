@@ -7,8 +7,10 @@ target 'VirusAlert' do
 
   # Pods for VirusAlert
   pod 'ArcGIS-Runtime-SDK-iOS', '100.7' 
-  pod 'PullUpController'
+  pod 'FloatingPanel'
   pod 'MHWebViewController', '~> 1.0'
   pod 'ZippyJSON'
   pod 'Neon'
+  pod 'SwifterSwift'
+  pod 'R.swift'
 end

@@ -11,10 +11,11 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(resource: R.font.latoRegular, size: 12)!], for: UIControl.State.normal)
+        UITabBar.appearance().tintColor = R.color.hospitalBlue()
+        
         return true
     }
 

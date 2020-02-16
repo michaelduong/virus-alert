@@ -8,26 +8,56 @@
 
 /* Begin PBXBuildFile section */
 		1650D216AE2376AE9C99FD76 /* Pods_VirusAlert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 339F272FB6821A4C110C948E /* Pods_VirusAlert.framework */; };
+		8134D0B923F8C0F700F0FC66 /* DetailStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8134D0B823F8C0F700F0FC66 /* DetailStatsViewController.swift */; };
+		8134D0BB23F8C19C00F0FC66 /* StatsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8134D0BA23F8C19C00F0FC66 /* StatsCard.swift */; };
+		8134D0BD23F8D10300F0FC66 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8134D0BC23F8D10300F0FC66 /* Extensions.swift */; };
+		8134D0BF23F8D12700F0FC66 /* VerticalStackview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8134D0BE23F8D12700F0FC66 /* VerticalStackview.swift */; };
+		8134D0C123F8E6E500F0FC66 /* FloatingPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8134D0C023F8E6E500F0FC66 /* FloatingPanel.swift */; };
 		818585CF23F14DD4003A5AAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818585CE23F14DD4003A5AAD /* AppDelegate.swift */; };
 		818585D123F14DD4003A5AAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818585D023F14DD4003A5AAD /* SceneDelegate.swift */; };
-		818585D323F14DD4003A5AAD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818585D223F14DD4003A5AAD /* MainViewController.swift */; };
+		818585D323F14DD4003A5AAD /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818585D223F14DD4003A5AAD /* StatsViewController.swift */; };
 		818585D623F14DD4003A5AAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 818585D423F14DD4003A5AAD /* Main.storyboard */; };
 		818585D823F14DD5003A5AAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 818585D723F14DD5003A5AAD /* Assets.xcassets */; };
 		818585DB23F14DD5003A5AAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 818585D923F14DD5003A5AAD /* LaunchScreen.storyboard */; };
 		8191E48D23F1517900BE6C2A /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8191E48C23F1517900BE6C2A /* BaseTabBarController.swift */; };
+		81CD8C5A23F6833300F1DF47 /* AVENGEANCE HEROIC AVENGER BD.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81CD8C5623F6833300F1DF47 /* AVENGEANCE HEROIC AVENGER BD.ttf */; };
+		81CD8C5B23F6833300F1DF47 /* AVENGEANCE HEROIC AVENGER BI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81CD8C5723F6833300F1DF47 /* AVENGEANCE HEROIC AVENGER BI.ttf */; };
+		81CD8C5C23F6833300F1DF47 /* AVENGEANCE HEROIC AVENGER AT.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81CD8C5823F6833300F1DF47 /* AVENGEANCE HEROIC AVENGER AT.ttf */; };
+		81CD8C5D23F6833300F1DF47 /* AVENGEANCE HEROIC AVENGER.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81CD8C5923F6833300F1DF47 /* AVENGEANCE HEROIC AVENGER.ttf */; };
+		81CD8C6423F688FB00F1DF47 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CD8C6323F688FB00F1DF47 /* R.generated.swift */; };
+		81CD8C6A23F6905F00F1DF47 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81CD8C6523F6905F00F1DF47 /* Lato-Black.ttf */; };
+		81CD8C6B23F6905F00F1DF47 /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81CD8C6623F6905F00F1DF47 /* Lato-Italic.ttf */; };
+		81CD8C6C23F6905F00F1DF47 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81CD8C6723F6905F00F1DF47 /* Lato-Regular.ttf */; };
+		81CD8C6D23F6905F00F1DF47 /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81CD8C6823F6905F00F1DF47 /* Lato-BoldItalic.ttf */; };
+		81CD8C6E23F6905F00F1DF47 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81CD8C6923F6905F00F1DF47 /* Lato-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		339F272FB6821A4C110C948E /* Pods_VirusAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VirusAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8134D0B823F8C0F700F0FC66 /* DetailStatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStatsViewController.swift; sourceTree = "<group>"; };
+		8134D0BA23F8C19C00F0FC66 /* StatsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsCard.swift; sourceTree = "<group>"; };
+		8134D0BC23F8D10300F0FC66 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8134D0BE23F8D12700F0FC66 /* VerticalStackview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalStackview.swift; sourceTree = "<group>"; };
+		8134D0C023F8E6E500F0FC66 /* FloatingPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingPanel.swift; sourceTree = "<group>"; };
 		818585CB23F14DD4003A5AAD /* VirusAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirusAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		818585CE23F14DD4003A5AAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		818585D023F14DD4003A5AAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		818585D223F14DD4003A5AAD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		818585D223F14DD4003A5AAD /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
 		818585D523F14DD4003A5AAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		818585D723F14DD5003A5AAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		818585DA23F14DD5003A5AAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		818585DC23F14DD5003A5AAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8191E48C23F1517900BE6C2A /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		81CD8C5623F6833300F1DF47 /* AVENGEANCE HEROIC AVENGER BD.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AVENGEANCE HEROIC AVENGER BD.ttf"; sourceTree = "<group>"; };
+		81CD8C5723F6833300F1DF47 /* AVENGEANCE HEROIC AVENGER BI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AVENGEANCE HEROIC AVENGER BI.ttf"; sourceTree = "<group>"; };
+		81CD8C5823F6833300F1DF47 /* AVENGEANCE HEROIC AVENGER AT.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AVENGEANCE HEROIC AVENGER AT.ttf"; sourceTree = "<group>"; };
+		81CD8C5923F6833300F1DF47 /* AVENGEANCE HEROIC AVENGER.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AVENGEANCE HEROIC AVENGER.ttf"; sourceTree = "<group>"; };
+		81CD8C6323F688FB00F1DF47 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		81CD8C6523F6905F00F1DF47 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
+		81CD8C6623F6905F00F1DF47 /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Italic.ttf"; sourceTree = "<group>"; };
+		81CD8C6723F6905F00F1DF47 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		81CD8C6823F6905F00F1DF47 /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
+		81CD8C6923F6905F00F1DF47 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
 		8A9B9B3CC3261FEE53E9F451 /* Pods-VirusAlert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VirusAlert.debug.xcconfig"; path = "Target Support Files/Pods-VirusAlert/Pods-VirusAlert.debug.xcconfig"; sourceTree = "<group>"; };
 		AE50328A59F14C95F5B0B10A /* Pods-VirusAlert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VirusAlert.release.xcconfig"; path = "Target Support Files/Pods-VirusAlert/Pods-VirusAlert.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,11 +104,11 @@
 		818585CD23F14DD4003A5AAD /* VirusAlert */ = {
 			isa = PBXGroup;
 			children = (
+				818585CE23F14DD4003A5AAD /* AppDelegate.swift */,
+				818585D023F14DD4003A5AAD /* SceneDelegate.swift */,
 				8191E48923F1504200BE6C2A /* Model */,
 				8191E48823F1503E00BE6C2A /* View */,
 				8191E48723F1503800BE6C2A /* Controller */,
-				818585CE23F14DD4003A5AAD /* AppDelegate.swift */,
-				818585D023F14DD4003A5AAD /* SceneDelegate.swift */,
 				8191E48A23F1504A00BE6C2A /* Helpers */,
 				8191E48B23F1505B00BE6C2A /* Resources */,
 			);
@@ -89,7 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				8191E48C23F1517900BE6C2A /* BaseTabBarController.swift */,
-				818585D223F14DD4003A5AAD /* MainViewController.swift */,
+				818585D223F14DD4003A5AAD /* StatsViewController.swift */,
+				8134D0B823F8C0F700F0FC66 /* DetailStatsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -98,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				818585D423F14DD4003A5AAD /* Main.storyboard */,
+				8134D0BA23F8C19C00F0FC66 /* StatsCard.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -112,6 +144,9 @@
 		8191E48A23F1504A00BE6C2A /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				8134D0BC23F8D10300F0FC66 /* Extensions.swift */,
+				8134D0BE23F8D12700F0FC66 /* VerticalStackview.swift */,
+				8134D0C023F8E6E500F0FC66 /* FloatingPanel.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -119,11 +154,29 @@
 		8191E48B23F1505B00BE6C2A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				81CD8C5523F6822B00F1DF47 /* Fonts */,
 				818585D723F14DD5003A5AAD /* Assets.xcassets */,
 				818585D923F14DD5003A5AAD /* LaunchScreen.storyboard */,
 				818585DC23F14DD5003A5AAD /* Info.plist */,
+				81CD8C6323F688FB00F1DF47 /* R.generated.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		81CD8C5523F6822B00F1DF47 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				81CD8C5823F6833300F1DF47 /* AVENGEANCE HEROIC AVENGER AT.ttf */,
+				81CD8C5623F6833300F1DF47 /* AVENGEANCE HEROIC AVENGER BD.ttf */,
+				81CD8C5723F6833300F1DF47 /* AVENGEANCE HEROIC AVENGER BI.ttf */,
+				81CD8C5923F6833300F1DF47 /* AVENGEANCE HEROIC AVENGER.ttf */,
+				81CD8C6523F6905F00F1DF47 /* Lato-Black.ttf */,
+				81CD8C6923F6905F00F1DF47 /* Lato-Bold.ttf */,
+				81CD8C6823F6905F00F1DF47 /* Lato-BoldItalic.ttf */,
+				81CD8C6623F6905F00F1DF47 /* Lato-Italic.ttf */,
+				81CD8C6723F6905F00F1DF47 /* Lato-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		9EB88D57AE1378AD676AE14E /* Frameworks */ = {
@@ -142,6 +195,7 @@
 			buildConfigurationList = 818585DF23F14DD5003A5AAD /* Build configuration list for PBXNativeTarget "VirusAlert" */;
 			buildPhases = (
 				161428D2B68F254320E5F4F0 /* [CP] Check Pods Manifest.lock */,
+				81CD8C6223F6885F00F1DF47 /* ShellScript */,
 				818585C723F14DD4003A5AAD /* Sources */,
 				818585C823F14DD4003A5AAD /* Frameworks */,
 				818585C923F14DD4003A5AAD /* Resources */,
@@ -194,9 +248,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81CD8C5B23F6833300F1DF47 /* AVENGEANCE HEROIC AVENGER BI.ttf in Resources */,
 				818585DB23F14DD5003A5AAD /* LaunchScreen.storyboard in Resources */,
 				818585D823F14DD5003A5AAD /* Assets.xcassets in Resources */,
+				81CD8C5A23F6833300F1DF47 /* AVENGEANCE HEROIC AVENGER BD.ttf in Resources */,
+				81CD8C6D23F6905F00F1DF47 /* Lato-BoldItalic.ttf in Resources */,
+				81CD8C6A23F6905F00F1DF47 /* Lato-Black.ttf in Resources */,
+				81CD8C5C23F6833300F1DF47 /* AVENGEANCE HEROIC AVENGER AT.ttf in Resources */,
+				81CD8C6E23F6905F00F1DF47 /* Lato-Bold.ttf in Resources */,
 				818585D623F14DD4003A5AAD /* Main.storyboard in Resources */,
+				81CD8C6C23F6905F00F1DF47 /* Lato-Regular.ttf in Resources */,
+				81CD8C6B23F6905F00F1DF47 /* Lato-Italic.ttf in Resources */,
+				81CD8C5D23F6833300F1DF47 /* AVENGEANCE HEROIC AVENGER.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +305,25 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VirusAlert/Pods-VirusAlert-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		81CD8C6223F6885F00F1DF47 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -249,8 +331,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8134D0BF23F8D12700F0FC66 /* VerticalStackview.swift in Sources */,
 				8191E48D23F1517900BE6C2A /* BaseTabBarController.swift in Sources */,
-				818585D323F14DD4003A5AAD /* MainViewController.swift in Sources */,
+				8134D0B923F8C0F700F0FC66 /* DetailStatsViewController.swift in Sources */,
+				818585D323F14DD4003A5AAD /* StatsViewController.swift in Sources */,
+				8134D0BD23F8D10300F0FC66 /* Extensions.swift in Sources */,
+				81CD8C6423F688FB00F1DF47 /* R.generated.swift in Sources */,
+				8134D0C123F8E6E500F0FC66 /* FloatingPanel.swift in Sources */,
+				8134D0BB23F8C19C00F0FC66 /* StatsCard.swift in Sources */,
 				818585CF23F14DD4003A5AAD /* AppDelegate.swift in Sources */,
 				818585D123F14DD4003A5AAD /* SceneDelegate.swift in Sources */,
 			);
