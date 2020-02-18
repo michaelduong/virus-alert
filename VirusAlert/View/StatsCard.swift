@@ -18,7 +18,6 @@ final class StatsCard: UIView {
         label.font = R.font.latoBold(size: 27)
         label.textColor = R.color.hospitalBlue()
         label.textAlignment = .center
-        label.text = "XXX"
         return label
     }()
     

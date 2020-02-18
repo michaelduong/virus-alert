@@ -7,6 +7,9 @@ PODS:
   - R.swift (5.1.0):
     - R.swift.Library (~> 5.1.0)
   - R.swift.Library (5.1.0)
+  - SDWebImage (5.5.2):
+    - SDWebImage/Core (= 5.5.2)
+  - SDWebImage/Core (5.5.2)
   - SwifterSwift (5.1.0):
     - SwifterSwift/AppKit (= 5.1.0)
     - SwifterSwift/CoreGraphics (= 5.1.0)
@@ -39,6 +42,7 @@ DEPENDENCIES:
   - MHWebViewController (~> 1.0)
   - Neon
   - R.swift
+  - SDWebImage
   - SwifterSwift
   - ZippyJSON
 
@@ -51,6 +55,7 @@ SPEC REPOS:
     - Neon
     - R.swift
     - R.swift.Library
+    - SDWebImage
     - SwifterSwift
     - ZippyJSON
     - ZippyJSONCFamily
@@ -63,10 +68,11 @@ SPEC CHECKSUMS:
   Neon: 7fb5a9327e7e57911843f608e08f4893a74deaf9
   R.swift: 8cbc4fc69b740305b6a17c8a8ed968eb788962d9
   R.swift.Library: fa85ce1e0d0b7e818cd9e080df910ba54d2776cc
+  SDWebImage: 4d5c027c935438f341ed33dbac53ff9f479922ca
   SwifterSwift: a9e8e144832638c2850b43da5feaf9598c6ad65b
   ZippyJSON: 71604a203bd4a7e68a5922cea5be994f94eb3593
   ZippyJSONCFamily: 32ba9218e783a6a9d1199053df77d148b9bbd04e
 
-PODFILE CHECKSUM: eb2d16f368a8a9f4e5cc91c4439adecf66f27ded
+PODFILE CHECKSUM: 69118d0cf52fdca5274af65c8a55efd2f677dc52
 
 COCOAPODS: 1.8.4

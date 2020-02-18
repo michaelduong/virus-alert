@@ -13,4 +13,5 @@ target 'VirusAlert' do
   pod 'Neon'
   pod 'SwifterSwift'
   pod 'R.swift'
+  pod 'SDWebImage'
 end

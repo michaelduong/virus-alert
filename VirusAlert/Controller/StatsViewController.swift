@@ -43,6 +43,8 @@ final class StatsViewController: UIViewController {
     }()
     let detailStatsVC = DetailStatsViewController()
     
+    private let notificationCenter = NotificationCenter.default
+    
     var fpc: FloatingPanelController!
     private var featureLayer: AGSFeatureLayer?
     weak var activeSelectionQuery: AGSCancelable?
@@ -88,7 +90,7 @@ final class StatsViewController: UIViewController {
         let map = AGSMap()
         map.basemap = AGSBasemap.lightGrayCanvas()
         
-        guard let featureServiceURL = URL(string: "https://services1.arcgis.com/0MSEUqKaxRlEPj5g/arcgis/rest/services/ncov_cases/FeatureServer/1") else { return }
+        guard let featureServiceURL = URL(string: "https://services1.arcgis.com/0MSEUqKaxRlEPj5g/arcgis/rest/services/Coronavirus_2019_nCoV_Cases/FeatureServer/1") else { return }
         let featureTable = AGSServiceFeatureTable(url: featureServiceURL)
         let featureLayer = AGSFeatureLayer(featureTable: featureTable)
         self.featureLayer = featureLayer
@@ -101,7 +103,8 @@ final class StatsViewController: UIViewController {
         
         mapView.locationDisplay.start { (error) in
             guard error == nil else {
-                UIAlertController(title: "Error", message: error?.localizedDescription, defaultActionButtonTitle: "Ok")
+                let ac = UIAlertController(title: "Error", message: error?.localizedDescription, defaultActionButtonTitle: "Ok")
+                ac.present(ac, animated: true)
                 return
             }
             print("Location display started")
@@ -149,8 +152,12 @@ extension StatsViewController: AGSGeoViewTouchDelegate {
                 print(error.localizedDescription)
             }
             if let result = queryResult {
-                print("\(result.featureEnumerator().allObjects.count) feature(s) selected")
-                print(result.featureEnumerator().allObjects.first?.attributes)
+                let objectId = result.featureEnumerator().allObjects.first?.attributes["OBJECTID"] as? Int
+                if let objectId = objectId {
+                    self?.notificationCenter.post(name: Notification.Name(NotificationName.updateData), object: objectId)
+                } else {
+                    self?.notificationCenter.post(name: Notification.Name(NotificationName.globalData), object: nil)
+                }
             }
         }
     }

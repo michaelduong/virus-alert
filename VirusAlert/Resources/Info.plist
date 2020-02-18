@@ -71,5 +71,7 @@
 	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>&quot;For showing your location on the map relative to threat areas&quot;</string>
+	<key>UIUserInterfaceStyle</key>
+	<string>Light</string>
 </dict>
 </plist>
