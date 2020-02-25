@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(resource: R.font.latoRegular, size: 12)!], for: UIControl.State.normal)
         UITabBar.appearance().tintColor = R.color.hospitalBlue()
+        UITabBar.appearance().backgroundColor = R.color.backgroundWhite()
         
         return true
     }

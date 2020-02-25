@@ -15,9 +15,18 @@ class Service {
     
     private init() {}
     
-    func fetchMapJSONData(completion: @escaping ([Feature]?, Error?) -> ()) {
-        let arcGISJSONUrl = "https://services1.arcgis.com/0MSEUqKaxRlEPj5g/arcgis/rest/services/ncov_cases/FeatureServer/1/query?f=json&where=1%3D1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&orderByFields=OBJECTID%20ASC&resultOffset=0&resultRecordCount=80&cacheHint=true&quantizationParameters=%7B%22mode%22%3A%22edit%22%7D"
-        
+    var arcGISJSONUrl: String!
+    
+    func fetchMapJSONData(layerType: Layer, completion: @escaping ([Feature]?, Error?) -> ()) {
+        switch layerType {
+        case .country:
+            arcGISJSONUrl = "https://services1.arcgis.com/0MSEUqKaxRlEPj5g/arcgis/rest/services/ncov_cases/FeatureServer/2/query?f=json&where=1%3D1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&orderByFields=OBJECTID%20ASC&resultOffset=0&resultRecordCount=80&cacheHint=true&quantizationParameters=%7B%22mode%22%3A%22edit%22%7D"
+        case .region:
+            arcGISJSONUrl = "https://services1.arcgis.com/0MSEUqKaxRlEPj5g/arcgis/rest/services/ncov_cases/FeatureServer/1/query?f=json&where=1%3D1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&orderByFields=OBJECTID%20ASC&resultOffset=0&resultRecordCount=80&cacheHint=true&quantizationParameters=%7B%22mode%22%3A%22edit%22%7D"
+        default:
+            break
+        }
+                
         guard let url = URL(string: arcGISJSONUrl) else { return }
         
         URLSession.shared.dataTask(with: url) { (data, resp, err) in
@@ -42,4 +51,9 @@ class Service {
             }
         }.resume()
     }
+}
+
+enum Layer {
+    case country
+    case region
 }

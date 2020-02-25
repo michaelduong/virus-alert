@@ -12,7 +12,7 @@ import Neon
 import FloatingPanel
 import SwifterSwift
 
-final class StatsViewController: UIViewController {
+final class MapViewController: UIViewController {
     
     // MARK: - Properties
     let mapView = AGSMapView()
@@ -116,11 +116,18 @@ final class StatsViewController: UIViewController {
     
     // MARK: - Actions
     @objc private func changeViewButtonTapped() {
-        
+        let statsTableViewVC = StatsTableViewController()
+        let transition = CATransition()
+        transition.duration = 0.3
+        transition.type = CATransitionType(rawValue: "flip")
+        transition.subtype = CATransitionSubtype.fromLeft
+        navigationController?.view.layer.add(transition, forKey: kCATransition)
+        navigationController?.pushViewController(statsTableViewVC, animated: false)
     }
 }
 
-extension StatsViewController: AGSGeoViewTouchDelegate {
+// MARK: - ArcGIS Map Delegate Methods
+extension MapViewController: AGSGeoViewTouchDelegate {
     func geoView(_ geoView: AGSGeoView, didTapAtScreenPoint screenPoint: CGPoint, mapPoint: AGSPoint) {
         //cancel the active query if it hasn't been completed yet
         if let activeSelectionQuery = activeSelectionQuery {
@@ -165,7 +172,7 @@ extension StatsViewController: AGSGeoViewTouchDelegate {
 }
 
 // MARK: - Floating Panel Controller Delegate Methods
-extension StatsViewController: FloatingPanelControllerDelegate {
+extension MapViewController: FloatingPanelControllerDelegate {
     
     func floatingPanel(_ vc: FloatingPanelController, layoutFor newCollection: UITraitCollection) -> FloatingPanelLayout? {
         return FloatingPanelStatsLayout()

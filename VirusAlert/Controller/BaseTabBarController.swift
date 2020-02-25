@@ -15,7 +15,7 @@ class BaseTabBarController: UITabBarController {
         super.viewDidLoad()
         
         viewControllers = [
-            createNavController(viewController: StatsViewController(), title: "Stats", imageName: "stats-icon"),
+            createNavController(viewController: MapViewController(), title: "Stats", imageName: "stats-icon"),
             createNavController(viewController: UIViewController(), title: "News Feed", imageName: "news-icon"),
             createNavController(viewController: UIViewController(), title: "Settings", imageName: "settings-icon")
         ]

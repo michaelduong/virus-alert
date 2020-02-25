@@ -46,7 +46,6 @@ final class DetailStatsViewController: UIViewController {
     }
     
     private func setupConstraints() {
-//        titleLabel.anchorToEdge(.top, padding: 20, width: 140, height: 29)
         titleLabel.anchorAndFillEdge(.top, xPad: 20, yPad: 20, otherSize: 29)
         view.groupAndAlign(group: .horizontal, andAlign: .underCentered, views: [box1, box2, box3], relativeTo: titleLabel, padding: 13, width: 105, height: 100)
     }
@@ -57,8 +56,9 @@ final class DetailStatsViewController: UIViewController {
         nc.addObserver(self, selector: #selector(loadGlobalData), name: Notification.Name(NotificationName.globalData), object: nil)
     }
     
+    // MARK: - Actions
     @objc private func loadGlobalData() {
-        Service.shared.fetchMapJSONData { [weak self] (result, err) in
+        Service.shared.fetchMapJSONData(layerType: .region) { [weak self] (result, err) in
             if let err = err {
                 print(err)
             }
@@ -86,8 +86,7 @@ final class DetailStatsViewController: UIViewController {
         }
     }
     
-    // MARK: - Actions
-    @objc func updateDataBoxes(_ notification: Notification) {
+    @objc private func updateDataBoxes(_ notification: Notification) {
         guard let objectId = notification.object as? Int else { return }
         let pointData = data.filter({ $0.attributes.objectId == objectId })
         let confirmed = pointData.first!.attributes.confirmed
