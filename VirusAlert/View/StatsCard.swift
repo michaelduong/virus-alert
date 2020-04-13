@@ -7,15 +7,14 @@
 //
 
 import UIKit
-import Neon
-import SwifterSwift
+import Stevia
 
 final class StatsCard: UIView {
     
     // MARK: - Properties
     let countLabel: UILabel = {
         let label = UILabel()
-        label.font = R.font.latoBold(size: 27)
+        label.font = R.font.latoBold(size: 20)
         label.textColor = R.color.hospitalBlue()
         label.textAlignment = .center
         return label
@@ -45,7 +44,7 @@ final class StatsCard: UIView {
     // MARK: - UI Functions
     private func setupUI() {
         backgroundColor = .white
-        addSubviews([
+        subviews([
             countLabel,
             statTypeLabel
         ])
@@ -55,7 +54,7 @@ final class StatsCard: UIView {
     }
     
     private func setupConstraints() {
-        countLabel.anchorAndFillEdge(.top, xPad: 8, yPad: 24, otherSize: 33)
-        statTypeLabel.alignAndFillWidth(align: .underCentered, relativeTo: countLabel, padding: 10, height: 19)
+        countLabel.top(31).height(33).centerHorizontally()
+        statTypeLabel.height(19).centerHorizontally().Top == countLabel.Bottom + 10
     }
 }

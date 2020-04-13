@@ -7,29 +7,28 @@
 //
 
 import Foundation
+import Arrow
 
 struct MapData: Decodable {
-    let features: [Feature]
+    var features: [Feature] = []
 }
 
 struct Feature: Decodable {
-    let attributes: Attribute
+    var attributes = Attribute()
 }
 
 struct Attribute: Decodable, Equatable, Comparable {
-    let objectId: Int
-    let provinceState: String?
-    let countryRegion: String
-    let lastUpdate: Int
-    let confirmed: Int
-    let deaths: Int
-    let recovered: Int
+    var objectId: Int = 0
+    var provinceState: String?
+    var countryRegion: String = ""
+    var confirmed: Int = 0
+    var deaths: Int = 0
+    var recovered: Int = 0
     
     enum CodingKeys: String, CodingKey {
         case objectId = "OBJECTID"
         case provinceState = "Province_State"
         case countryRegion = "Country_Region"
-        case lastUpdate = "Last_Update"
         case confirmed = "Confirmed"
         case deaths = "Deaths"
         case recovered = "Recovered"
@@ -41,5 +40,28 @@ struct Attribute: Decodable, Equatable, Comparable {
     
     static func == (lhs: Attribute, rhs: Attribute) -> Bool {
         return lhs.objectId == rhs.objectId
+    }
+}
+
+extension MapData: ArrowParsable {
+    mutating func deserialize(_ json: JSON) {
+        features <-- json["features"]
+    }
+}
+
+extension Feature: ArrowParsable {
+    mutating func deserialize(_ json: JSON) {
+        attributes <-- json["attributes"]
+    }
+}
+
+extension Attribute: ArrowParsable {
+    mutating func deserialize(_ json: JSON) {
+        objectId <-- json["OBJECTID"]
+        provinceState <-- json["Province_State"]
+        countryRegion <-- json["Country_Region"]
+        confirmed <-- json["Confirmed"]
+        deaths <-- json["Deaths"]
+        recovered <-- json["Recovered"]
     }
 }

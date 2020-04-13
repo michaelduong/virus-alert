@@ -6,6 +6,7 @@
 //  Copyright © 2020 Turnt Labs. All rights reserved.
 //
 
+import UIKit
 import FloatingPanel
 
 class FloatingPanelStatsLayout: FloatingPanelLayout {
@@ -18,7 +19,7 @@ class FloatingPanelStatsLayout: FloatingPanelLayout {
 
     func insetFor(position: FloatingPanelPosition) -> CGFloat? {
         switch position {
-        case .full: return 312.0
+        case .full: return 50.0
         case .half: return 186.0
         case .tip: return 62.0
         default: return nil

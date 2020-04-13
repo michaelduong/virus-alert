@@ -3,11 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1650D216AE2376AE9C99FD76 /* Pods_VirusAlert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 339F272FB6821A4C110C948E /* Pods_VirusAlert.framework */; };
+		810CE0B724417FCB0020BA59 /* Tips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810CE0B624417FCB0020BA59 /* Tips.swift */; };
+		810CE0B9244180160020BA59 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810CE0B8244180160020BA59 /* News.swift */; };
+		810CE0C52443CF700020BA59 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 810CE0C42443CF700020BA59 /* Then */; };
+		810CE0C72443D34F0020BA59 /* WSApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810CE0C62443D34F0020BA59 /* WSApi.swift */; };
+		810CE0CA2443D4300020BA59 /* ws in Frameworks */ = {isa = PBXBuildFile; productRef = 810CE0C92443D4300020BA59 /* ws */; };
+		810CE0D22443EBD00020BA59 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 810CE0D12443EBD00020BA59 /* Nuke */; };
 		8134D0B923F8C0F700F0FC66 /* DetailStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8134D0B823F8C0F700F0FC66 /* DetailStatsViewController.swift */; };
 		8134D0BB23F8C19C00F0FC66 /* StatsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8134D0BA23F8C19C00F0FC66 /* StatsCard.swift */; };
 		8134D0BD23F8D10300F0FC66 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8134D0BC23F8D10300F0FC66 /* Extensions.swift */; };
@@ -16,14 +22,15 @@
 		8134D0C323FB8D1E00F0FC66 /* MapData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8134D0C223FB8D1E00F0FC66 /* MapData.swift */; };
 		8134D0C623FB8F1600F0FC66 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8134D0C523FB8F1600F0FC66 /* Service.swift */; };
 		8134D0C823FB9E0500F0FC66 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8134D0C723FB9E0500F0FC66 /* Constants.swift */; };
-		81796AE623FD15A9006AA061 /* StatsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81796AE523FD15A9006AA061 /* StatsTableViewController.swift */; };
 		818585CF23F14DD4003A5AAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818585CE23F14DD4003A5AAD /* AppDelegate.swift */; };
 		818585D123F14DD4003A5AAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818585D023F14DD4003A5AAD /* SceneDelegate.swift */; };
 		818585D323F14DD4003A5AAD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818585D223F14DD4003A5AAD /* MapViewController.swift */; };
-		818585D623F14DD4003A5AAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 818585D423F14DD4003A5AAD /* Main.storyboard */; };
 		818585D823F14DD5003A5AAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 818585D723F14DD5003A5AAD /* Assets.xcassets */; };
 		818585DB23F14DD5003A5AAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 818585D923F14DD5003A5AAD /* LaunchScreen.storyboard */; };
 		8191E48D23F1517900BE6C2A /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8191E48C23F1517900BE6C2A /* BaseTabBarController.swift */; };
+		81BA1E54243ADE660029A42E /* Stevia in Frameworks */ = {isa = PBXBuildFile; productRef = 81BA1E53243ADE660029A42E /* Stevia */; };
+		81BA1E5A243ADF5F0029A42E /* SwifterSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 81BA1E59243ADF5F0029A42E /* SwifterSwift */; };
+		81BA1E5D243ADFB60029A42E /* FloatingPanel in Frameworks */ = {isa = PBXBuildFile; productRef = 81BA1E5C243ADFB60029A42E /* FloatingPanel */; };
 		81CD8C5A23F6833300F1DF47 /* AVENGEANCE HEROIC AVENGER BD.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81CD8C5623F6833300F1DF47 /* AVENGEANCE HEROIC AVENGER BD.ttf */; };
 		81CD8C5B23F6833300F1DF47 /* AVENGEANCE HEROIC AVENGER BI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81CD8C5723F6833300F1DF47 /* AVENGEANCE HEROIC AVENGER BI.ttf */; };
 		81CD8C5C23F6833300F1DF47 /* AVENGEANCE HEROIC AVENGER AT.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81CD8C5823F6833300F1DF47 /* AVENGEANCE HEROIC AVENGER AT.ttf */; };
@@ -38,6 +45,9 @@
 
 /* Begin PBXFileReference section */
 		339F272FB6821A4C110C948E /* Pods_VirusAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VirusAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		810CE0B624417FCB0020BA59 /* Tips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tips.swift; sourceTree = "<group>"; };
+		810CE0B8244180160020BA59 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		810CE0C62443D34F0020BA59 /* WSApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSApi.swift; sourceTree = "<group>"; };
 		8134D0B823F8C0F700F0FC66 /* DetailStatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStatsViewController.swift; sourceTree = "<group>"; };
 		8134D0BA23F8C19C00F0FC66 /* StatsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsCard.swift; sourceTree = "<group>"; };
 		8134D0BC23F8D10300F0FC66 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -46,12 +56,10 @@
 		8134D0C223FB8D1E00F0FC66 /* MapData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapData.swift; sourceTree = "<group>"; };
 		8134D0C523FB8F1600F0FC66 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		8134D0C723FB9E0500F0FC66 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		81796AE523FD15A9006AA061 /* StatsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsTableViewController.swift; sourceTree = "<group>"; };
 		818585CB23F14DD4003A5AAD /* Virus Alert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Virus Alert.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		818585CE23F14DD4003A5AAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		818585D023F14DD4003A5AAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		818585D223F14DD4003A5AAD /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		818585D523F14DD4003A5AAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		818585D723F14DD5003A5AAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		818585DA23F14DD5003A5AAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		818585DC23F14DD5003A5AAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -75,7 +83,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				810CE0C52443CF700020BA59 /* Then in Frameworks */,
+				81BA1E5D243ADFB60029A42E /* FloatingPanel in Frameworks */,
+				810CE0D22443EBD00020BA59 /* Nuke in Frameworks */,
+				81BA1E5A243ADF5F0029A42E /* SwifterSwift in Frameworks */,
+				81BA1E54243ADE660029A42E /* Stevia in Frameworks */,
 				1650D216AE2376AE9C99FD76 /* Pods_VirusAlert.framework in Frameworks */,
+				810CE0CA2443D4300020BA59 /* ws in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				8134D0C523FB8F1600F0FC66 /* Service.swift */,
+				810CE0C62443D34F0020BA59 /* WSApi.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -138,7 +153,6 @@
 				8191E48C23F1517900BE6C2A /* BaseTabBarController.swift */,
 				818585D223F14DD4003A5AAD /* MapViewController.swift */,
 				8134D0B823F8C0F700F0FC66 /* DetailStatsViewController.swift */,
-				81796AE523FD15A9006AA061 /* StatsTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -146,7 +160,6 @@
 		8191E48823F1503E00BE6C2A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				818585D423F14DD4003A5AAD /* Main.storyboard */,
 				8134D0BA23F8C19C00F0FC66 /* StatsCard.swift */,
 			);
 			path = View;
@@ -156,6 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				8134D0C223FB8D1E00F0FC66 /* MapData.swift */,
+				810CE0B624417FCB0020BA59 /* Tips.swift */,
+				810CE0B8244180160020BA59 /* News.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -226,6 +241,14 @@
 			dependencies = (
 			);
 			name = VirusAlert;
+			packageProductDependencies = (
+				81BA1E53243ADE660029A42E /* Stevia */,
+				81BA1E59243ADF5F0029A42E /* SwifterSwift */,
+				81BA1E5C243ADFB60029A42E /* FloatingPanel */,
+				810CE0C42443CF700020BA59 /* Then */,
+				810CE0C92443D4300020BA59 /* ws */,
+				810CE0D12443EBD00020BA59 /* Nuke */,
+			);
 			productName = VirusAlert;
 			productReference = 818585CB23F14DD4003A5AAD /* Virus Alert.app */;
 			productType = "com.apple.product-type.application";
@@ -254,6 +277,14 @@
 				Base,
 			);
 			mainGroup = 818585C223F14DD4003A5AAD;
+			packageReferences = (
+				81BA1E52243ADE660029A42E /* XCRemoteSwiftPackageReference "Stevia" */,
+				81BA1E58243ADF5F0029A42E /* XCRemoteSwiftPackageReference "SwifterSwift" */,
+				81BA1E5B243ADFB60029A42E /* XCRemoteSwiftPackageReference "FloatingPanel" */,
+				810CE0C32443CF700020BA59 /* XCRemoteSwiftPackageReference "Then" */,
+				810CE0C82443D4300020BA59 /* XCRemoteSwiftPackageReference "ws" */,
+				810CE0D02443EBD00020BA59 /* XCRemoteSwiftPackageReference "Nuke" */,
+			);
 			productRefGroup = 818585CC23F14DD4003A5AAD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -276,7 +307,6 @@
 				81CD8C6A23F6905F00F1DF47 /* Lato-Black.ttf in Resources */,
 				81CD8C5C23F6833300F1DF47 /* AVENGEANCE HEROIC AVENGER AT.ttf in Resources */,
 				81CD8C6E23F6905F00F1DF47 /* Lato-Bold.ttf in Resources */,
-				818585D623F14DD4003A5AAD /* Main.storyboard in Resources */,
 				81CD8C6C23F6905F00F1DF47 /* Lato-Regular.ttf in Resources */,
 				81CD8C6B23F6905F00F1DF47 /* Lato-Italic.ttf in Resources */,
 				81CD8C5D23F6833300F1DF47 /* AVENGEANCE HEROIC AVENGER.ttf in Resources */,
@@ -353,15 +383,17 @@
 			files = (
 				8134D0BF23F8D12700F0FC66 /* VerticalStackview.swift in Sources */,
 				8191E48D23F1517900BE6C2A /* BaseTabBarController.swift in Sources */,
+				810CE0B9244180160020BA59 /* News.swift in Sources */,
 				8134D0B923F8C0F700F0FC66 /* DetailStatsViewController.swift in Sources */,
 				818585D323F14DD4003A5AAD /* MapViewController.swift in Sources */,
 				8134D0BD23F8D10300F0FC66 /* Extensions.swift in Sources */,
 				8134D0C623FB8F1600F0FC66 /* Service.swift in Sources */,
 				81CD8C6423F688FB00F1DF47 /* R.generated.swift in Sources */,
 				8134D0C823FB9E0500F0FC66 /* Constants.swift in Sources */,
+				810CE0C72443D34F0020BA59 /* WSApi.swift in Sources */,
 				8134D0C123F8E6E500F0FC66 /* FloatingPanel.swift in Sources */,
-				81796AE623FD15A9006AA061 /* StatsTableViewController.swift in Sources */,
 				8134D0BB23F8C19C00F0FC66 /* StatsCard.swift in Sources */,
+				810CE0B724417FCB0020BA59 /* Tips.swift in Sources */,
 				818585CF23F14DD4003A5AAD /* AppDelegate.swift in Sources */,
 				8134D0C323FB8D1E00F0FC66 /* MapData.swift in Sources */,
 				818585D123F14DD4003A5AAD /* SceneDelegate.swift in Sources */,
@@ -371,14 +403,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		818585D423F14DD4003A5AAD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				818585D523F14DD4003A5AAD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		818585D923F14DD5003A5AAD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -568,6 +592,90 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		810CE0C32443CF700020BA59 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/freshOS/Then";
+			requirement = {
+				kind = exactVersion;
+				version = 5.1.3;
+			};
+		};
+		810CE0C82443D4300020BA59 /* XCRemoteSwiftPackageReference "ws" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/freshOS/ws";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.2;
+			};
+		};
+		810CE0D02443EBD00020BA59 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.4.1;
+			};
+		};
+		81BA1E52243ADE660029A42E /* XCRemoteSwiftPackageReference "Stevia" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/freshOS/Stevia";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		81BA1E58243ADF5F0029A42E /* XCRemoteSwiftPackageReference "SwifterSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwifterSwift/SwifterSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.0;
+			};
+		};
+		81BA1E5B243ADFB60029A42E /* XCRemoteSwiftPackageReference "FloatingPanel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SCENEE/FloatingPanel";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.7.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		810CE0C42443CF700020BA59 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 810CE0C32443CF700020BA59 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		810CE0C92443D4300020BA59 /* ws */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 810CE0C82443D4300020BA59 /* XCRemoteSwiftPackageReference "ws" */;
+			productName = ws;
+		};
+		810CE0D12443EBD00020BA59 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 810CE0D02443EBD00020BA59 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+		81BA1E53243ADE660029A42E /* Stevia */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81BA1E52243ADE660029A42E /* XCRemoteSwiftPackageReference "Stevia" */;
+			productName = Stevia;
+		};
+		81BA1E59243ADF5F0029A42E /* SwifterSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81BA1E58243ADF5F0029A42E /* XCRemoteSwiftPackageReference "SwifterSwift" */;
+			productName = SwifterSwift;
+		};
+		81BA1E5C243ADFB60029A42E /* FloatingPanel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81BA1E5B243ADFB60029A42E /* XCRemoteSwiftPackageReference "FloatingPanel" */;
+			productName = FloatingPanel;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 818585C323F14DD4003A5AAD /* Project object */;
 }

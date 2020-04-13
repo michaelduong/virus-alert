@@ -8,7 +8,7 @@
 
 import UIKit
 import ArcGIS
-import Neon
+import Stevia
 import FloatingPanel
 import SwifterSwift
 
@@ -62,10 +62,9 @@ final class MapViewController: UIViewController {
     
     // MARK: - UI Functions
     private func setupUI() {
-        view.addSubviews([
+        view.subviews([
             mapView,
-            titleView,
-            changeViewButton
+            titleView
         ])
         setupConstraints()
         setupMap()
@@ -81,16 +80,21 @@ final class MapViewController: UIViewController {
     }
     
     private func setupConstraints() {
-        mapView.fillSuperview()
-        titleView.anchorToEdge(.top, padding: 52, width: 220, height: 32)
-        changeViewButton.anchorInCorner(.topRight, xPad: 20, yPad: 48, width: 40, height: 40)
+        mapView.fillToSuperview()
+        titleView.width(220)
+            .height(32)
+            .centerHorizontally()
+            .top(52)
+        changeViewButton.right(20)
+            .size(40)
+            .CenterY == titleView.CenterY
     }
     
     private func setupMap() {
         let map = AGSMap()
         map.basemap = AGSBasemap.lightGrayCanvas()
         
-        guard let featureServiceURL = URL(string: "https://services1.arcgis.com/0MSEUqKaxRlEPj5g/arcgis/rest/services/Coronavirus_2019_nCoV_Cases/FeatureServer/1") else { return }
+        guard let featureServiceURL = URL(string: "https://services1.arcgis.com/0MSEUqKaxRlEPj5g/arcgis/rest/services/ncov_cases/FeatureServer/1") else { return }
         let featureTable = AGSServiceFeatureTable(url: featureServiceURL)
         let featureLayer = AGSFeatureLayer(featureTable: featureTable)
         self.featureLayer = featureLayer
@@ -116,7 +120,7 @@ final class MapViewController: UIViewController {
     
     // MARK: - Actions
     @objc private func changeViewButtonTapped() {
-        let statsTableViewVC = StatsTableViewController()
+        let statsTableViewVC = StatsViewController()
         let transition = CATransition()
         transition.duration = 0.3
         transition.type = CATransitionType(rawValue: "flip")

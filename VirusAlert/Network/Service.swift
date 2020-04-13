@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import ZippyJSON
 
 class Service {
     
@@ -23,8 +22,6 @@ class Service {
             arcGISJSONUrl = "https://services1.arcgis.com/0MSEUqKaxRlEPj5g/arcgis/rest/services/ncov_cases/FeatureServer/2/query?f=json&where=1%3D1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&orderByFields=OBJECTID%20ASC&resultOffset=0&resultRecordCount=80&cacheHint=true&quantizationParameters=%7B%22mode%22%3A%22edit%22%7D"
         case .region:
             arcGISJSONUrl = "https://services1.arcgis.com/0MSEUqKaxRlEPj5g/arcgis/rest/services/ncov_cases/FeatureServer/1/query?f=json&where=1%3D1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&orderByFields=OBJECTID%20ASC&resultOffset=0&resultRecordCount=80&cacheHint=true&quantizationParameters=%7B%22mode%22%3A%22edit%22%7D"
-        default:
-            break
         }
                 
         guard let url = URL(string: arcGISJSONUrl) else { return }
@@ -37,7 +34,7 @@ class Service {
             }
             
             do {
-                let decoder = ZippyJSONDecoder()
+                let decoder = JSONDecoder()
                 guard let data = data else {
                     print("No data")
                     completion(nil, nil)
