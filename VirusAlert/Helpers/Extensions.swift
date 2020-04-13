@@ -32,21 +32,14 @@ extension Int {
     }
 }
 
-@nonobjc extension UIViewController {
-    func add(_ child: UIViewController, frame: CGRect? = nil) {
-        addChild(child)
-
-        if let frame = frame {
-            child.view.frame = frame
-        }
-
-        view.addSubview(child.view)
-        child.didMove(toParent: self)
-    }
-
-    func remove() {
-        willMove(toParent: nil)
-        view.removeFromSuperview()
-        removeFromParent()
+extension UIView {
+    func dropShadow(scale: Bool = true) {
+        layer.masksToBounds = false
+        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowOpacity = 0.2
+        layer.shadowOffset = .zero
+        layer.shadowRadius = 8
+        layer.shouldRasterize = true
+        layer.rasterizationScale = scale ? UIScreen.main.scale : 1
     }
 }

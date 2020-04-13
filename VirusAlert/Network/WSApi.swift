@@ -15,7 +15,7 @@ final class WSApi {
     private var regionEndpoint: String!
     
     private init() {
-//        ws.logLevels = .debug
+        ws.logLevels = .debug
     }
        
     func fetchMapData(layerType: Layer) -> Promise<MapData> {

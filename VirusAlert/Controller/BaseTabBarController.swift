@@ -16,7 +16,7 @@ class BaseTabBarController: UITabBarController {
         
         viewControllers = [
             createNavController(viewController: MapViewController(), title: "Stats", imageName: "stats-icon"),
-            createNavController(viewController: UIViewController(), title: "News Feed", imageName: "news-icon"),
+            createNavController(viewController: NewsTableViewController(), title: "News Feed", imageName: "news-icon"),
             createNavController(viewController: UIViewController(), title: "Settings", imageName: "settings-icon")
         ]
     }
@@ -26,12 +26,13 @@ class BaseTabBarController: UITabBarController {
         let navController = UINavigationController(rootViewController: viewController)
         navController.navigationBar.prefersLargeTitles = true
         navController.navigationBar.setTitleFont(R.font.latoBlack(size: 36)!)
+        navController.navigationBar.isTranslucent = false
         viewController.navigationItem.title = title
         navController.tabBarItem.title = title
         navController.tabBarItem.image = UIImage(named: imageName)
         
         let appearance = UINavigationBarAppearance()
-        appearance.configureWithDefaultBackground()
+        appearance.backgroundColor = R.color.backgroundWhite()
         navController.navigationBar.scrollEdgeAppearance = appearance
         
         return navController

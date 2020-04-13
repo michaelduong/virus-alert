@@ -31,7 +31,7 @@ final class DetailStatsViewController: UIViewController {
     
     var tableView = UITableView(frame: .zero, style: .grouped)
     var stack: UIStackView!
-    var data: [Feature]!
+    var data = [Feature]()
     
     var confirmed: Int!
     var deaths: Int!
@@ -99,6 +99,8 @@ final class DetailStatsViewController: UIViewController {
     private func fetchAndSortStats() {
         WSApi.shared.fetchMapData(layerType: .country).then { results in
             self.data = results.features
+        }.onError{ e in
+            print(e)
         }.then(sortData)
             .finally(reloadData)
     }
@@ -136,6 +138,8 @@ final class DetailStatsViewController: UIViewController {
     @objc private func loadGlobalData() {
         WSApi.shared.fetchMapData(layerType: .region).then { results in
             self.data = results.features
+        }.onError{ e in
+            print(e)
         }.then(sortGlobalData)
             .finally(reloadDataBoxes)
     }
@@ -216,7 +220,7 @@ extension DetailStatsViewController: UITableViewDataSource {
         cell?.detailTextLabel?.font = R.font.latoRegular(size: 18)
         
         var data: (Int, String)!
-
+        
         data = shownTuple[indexPath.row]
         
         cell?.textLabel?.text = String(describing: data.0)

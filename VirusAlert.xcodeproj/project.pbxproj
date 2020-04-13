@@ -14,6 +14,10 @@
 		810CE0C72443D34F0020BA59 /* WSApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810CE0C62443D34F0020BA59 /* WSApi.swift */; };
 		810CE0CA2443D4300020BA59 /* ws in Frameworks */ = {isa = PBXBuildFile; productRef = 810CE0C92443D4300020BA59 /* ws */; };
 		810CE0D22443EBD00020BA59 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 810CE0D12443EBD00020BA59 /* Nuke */; };
+		810CE0D4244434A00020BA59 /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810CE0D3244434A00020BA59 /* NewsTableViewController.swift */; };
+		810CE0D6244435380020BA59 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810CE0D5244435380020BA59 /* NewsTableViewCell.swift */; };
+		810CE0D8244455770020BA59 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810CE0D7244455770020BA59 /* SettingsViewController.swift */; };
+		810CE0DA244456600020BA59 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810CE0D92444565F0020BA59 /* CustomButton.swift */; };
 		8134D0B923F8C0F700F0FC66 /* DetailStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8134D0B823F8C0F700F0FC66 /* DetailStatsViewController.swift */; };
 		8134D0BB23F8C19C00F0FC66 /* StatsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8134D0BA23F8C19C00F0FC66 /* StatsCard.swift */; };
 		8134D0BD23F8D10300F0FC66 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8134D0BC23F8D10300F0FC66 /* Extensions.swift */; };
@@ -48,6 +52,10 @@
 		810CE0B624417FCB0020BA59 /* Tips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tips.swift; sourceTree = "<group>"; };
 		810CE0B8244180160020BA59 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		810CE0C62443D34F0020BA59 /* WSApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSApi.swift; sourceTree = "<group>"; };
+		810CE0D3244434A00020BA59 /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
+		810CE0D5244435380020BA59 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		810CE0D7244455770020BA59 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		810CE0D92444565F0020BA59 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		8134D0B823F8C0F700F0FC66 /* DetailStatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStatsViewController.swift; sourceTree = "<group>"; };
 		8134D0BA23F8C19C00F0FC66 /* StatsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsCard.swift; sourceTree = "<group>"; };
 		8134D0BC23F8D10300F0FC66 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -153,6 +161,8 @@
 				8191E48C23F1517900BE6C2A /* BaseTabBarController.swift */,
 				818585D223F14DD4003A5AAD /* MapViewController.swift */,
 				8134D0B823F8C0F700F0FC66 /* DetailStatsViewController.swift */,
+				810CE0D3244434A00020BA59 /* NewsTableViewController.swift */,
+				810CE0D7244455770020BA59 /* SettingsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -161,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				8134D0BA23F8C19C00F0FC66 /* StatsCard.swift */,
+				810CE0D5244435380020BA59 /* NewsTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -182,6 +193,7 @@
 				8134D0BE23F8D12700F0FC66 /* VerticalStackview.swift */,
 				8134D0C023F8E6E500F0FC66 /* FloatingPanel.swift */,
 				8134D0C723FB9E0500F0FC66 /* Constants.swift */,
+				810CE0D92444565F0020BA59 /* CustomButton.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -384,10 +396,14 @@
 				8134D0BF23F8D12700F0FC66 /* VerticalStackview.swift in Sources */,
 				8191E48D23F1517900BE6C2A /* BaseTabBarController.swift in Sources */,
 				810CE0B9244180160020BA59 /* News.swift in Sources */,
+				810CE0D4244434A00020BA59 /* NewsTableViewController.swift in Sources */,
+				810CE0DA244456600020BA59 /* CustomButton.swift in Sources */,
 				8134D0B923F8C0F700F0FC66 /* DetailStatsViewController.swift in Sources */,
+				810CE0D8244455770020BA59 /* SettingsViewController.swift in Sources */,
 				818585D323F14DD4003A5AAD /* MapViewController.swift in Sources */,
 				8134D0BD23F8D10300F0FC66 /* Extensions.swift in Sources */,
 				8134D0C623FB8F1600F0FC66 /* Service.swift in Sources */,
+				810CE0D6244435380020BA59 /* NewsTableViewCell.swift in Sources */,
 				81CD8C6423F688FB00F1DF47 /* R.generated.swift in Sources */,
 				8134D0C823FB9E0500F0FC66 /* Constants.swift in Sources */,
 				810CE0C72443D34F0020BA59 /* WSApi.swift in Sources */,

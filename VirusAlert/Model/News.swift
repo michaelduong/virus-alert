@@ -28,17 +28,33 @@ struct News: Codable {
 }
 
 struct Source: Codable {
-    let name: String
+    var name = ""
 }
-
 
 struct NewsArticles {
     var title = ""
     var description = ""
     var imageUrl = ""
     var url = ""
-    var date = ""
-    var source = ""
+    var date = "" {
+        didSet {
+            date = convertDate(date: date)
+        }
+    }
+    
+    func convertDate(date: String) -> String {
+        let isoDateFormatter = ISO8601DateFormatter()
+        isoDateFormatter.timeZone = TimeZone(secondsFromGMT: 0)
+        isoDateFormatter.formatOptions = [
+            .withFullDate,
+            .withFullTime,
+            .withDashSeparatorInDate
+        ]
+        
+        let convertedDate = isoDateFormatter.date(from: date)
+        
+        return convertedDate?.dateString(ofStyle: .medium) ?? ""
+    }
 }
 
 extension NewsArticles: ArrowParsable {
@@ -48,6 +64,5 @@ extension NewsArticles: ArrowParsable {
         imageUrl <-- json["urlToImage"]
         url <-- json["url"]
         date <-- json["publishedAt"]
-        source <-- json["source.name"]
     }
 }

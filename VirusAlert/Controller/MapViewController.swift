@@ -15,7 +15,7 @@ import SwifterSwift
 final class MapViewController: UIViewController {
     
     // MARK: - Properties
-    let mapView = AGSMapView()
+    var mapView = AGSMapView()
     let titleView: UIView = {
         let view = UIView()
         view.backgroundColor = R.color.hospitalBlue()
@@ -30,16 +30,6 @@ final class MapViewController: UIViewController {
         view.addSubview(label)
         label.anchorCenterSuperview()
         return view
-    }()
-    let changeViewButton: UIButton = {
-        let button = UIButton()
-        button.backgroundColor = R.color.hospitalBlue()
-        button.layer.cornerRadius = 20
-        button.layer.opacity = 0.90
-        button.addShadow(ofColor: .black, radius: 3, offset: .zero, opacity: 0.50)
-        button.setImageForAllStates(R.image.chartIcon()!)
-        button.addTarget(self, action: #selector(changeViewButtonTapped), for: .touchUpInside)
-        return button
     }()
     let detailStatsVC = DetailStatsViewController()
     
@@ -58,6 +48,11 @@ final class MapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
     }
     
     // MARK: - UI Functions
@@ -85,9 +80,6 @@ final class MapViewController: UIViewController {
             .height(32)
             .centerHorizontally()
             .top(52)
-        changeViewButton.right(20)
-            .size(40)
-            .CenterY == titleView.CenterY
     }
     
     private func setupMap() {
@@ -116,17 +108,6 @@ final class MapViewController: UIViewController {
             self.mapView.locationDisplay.wanderExtentFactor = 0.75
             self.mapView.locationDisplay.initialZoomScale = 10000000
         }
-    }
-    
-    // MARK: - Actions
-    @objc private func changeViewButtonTapped() {
-        let statsTableViewVC = StatsViewController()
-        let transition = CATransition()
-        transition.duration = 0.3
-        transition.type = CATransitionType(rawValue: "flip")
-        transition.subtype = CATransitionSubtype.fromLeft
-        navigationController?.view.layer.add(transition, forKey: kCATransition)
-        navigationController?.pushViewController(statsTableViewVC, animated: false)
     }
 }
 
