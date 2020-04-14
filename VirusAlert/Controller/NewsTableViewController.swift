@@ -65,5 +65,8 @@ extension NewsTableViewController {
         
         present(url: articleUrl)
     }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 240
+    }
 }
-

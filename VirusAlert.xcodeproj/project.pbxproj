@@ -24,7 +24,6 @@
 		8134D0BF23F8D12700F0FC66 /* VerticalStackview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8134D0BE23F8D12700F0FC66 /* VerticalStackview.swift */; };
 		8134D0C123F8E6E500F0FC66 /* FloatingPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8134D0C023F8E6E500F0FC66 /* FloatingPanel.swift */; };
 		8134D0C323FB8D1E00F0FC66 /* MapData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8134D0C223FB8D1E00F0FC66 /* MapData.swift */; };
-		8134D0C623FB8F1600F0FC66 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8134D0C523FB8F1600F0FC66 /* Service.swift */; };
 		8134D0C823FB9E0500F0FC66 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8134D0C723FB9E0500F0FC66 /* Constants.swift */; };
 		818585CF23F14DD4003A5AAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818585CE23F14DD4003A5AAD /* AppDelegate.swift */; };
 		818585D123F14DD4003A5AAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818585D023F14DD4003A5AAD /* SceneDelegate.swift */; };
@@ -62,7 +61,6 @@
 		8134D0BE23F8D12700F0FC66 /* VerticalStackview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalStackview.swift; sourceTree = "<group>"; };
 		8134D0C023F8E6E500F0FC66 /* FloatingPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingPanel.swift; sourceTree = "<group>"; };
 		8134D0C223FB8D1E00F0FC66 /* MapData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapData.swift; sourceTree = "<group>"; };
-		8134D0C523FB8F1600F0FC66 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		8134D0C723FB9E0500F0FC66 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		818585CB23F14DD4003A5AAD /* Virus Alert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Virus Alert.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		818585CE23F14DD4003A5AAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -116,7 +114,6 @@
 		8134D0C423FB8EEA00F0FC66 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				8134D0C523FB8F1600F0FC66 /* Service.swift */,
 				810CE0C62443D34F0020BA59 /* WSApi.swift */,
 			);
 			path = Network;
@@ -402,7 +399,6 @@
 				810CE0D8244455770020BA59 /* SettingsViewController.swift in Sources */,
 				818585D323F14DD4003A5AAD /* MapViewController.swift in Sources */,
 				8134D0BD23F8D10300F0FC66 /* Extensions.swift in Sources */,
-				8134D0C623FB8F1600F0FC66 /* Service.swift in Sources */,
 				810CE0D6244435380020BA59 /* NewsTableViewCell.swift in Sources */,
 				81CD8C6423F688FB00F1DF47 /* R.generated.swift in Sources */,
 				8134D0C823FB9E0500F0FC66 /* Constants.swift in Sources */,

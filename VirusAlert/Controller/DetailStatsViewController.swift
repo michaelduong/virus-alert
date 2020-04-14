@@ -223,7 +223,7 @@ extension DetailStatsViewController: UITableViewDataSource {
         
         data = shownTuple[indexPath.row]
         
-        cell?.textLabel?.text = String(describing: data.0)
+        cell?.textLabel?.text = String(describing: data.0.withCommas())
         cell?.detailTextLabel?.text = data.1
         return cell ?? UITableViewCell()
     }

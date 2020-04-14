@@ -37,3 +37,8 @@ final class WSApi {
         return ws.get("https://coronareader.com/data.json")
     }
 }
+
+enum Layer {
+    case country
+    case region
+}

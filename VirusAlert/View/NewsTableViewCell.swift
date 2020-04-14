@@ -27,10 +27,8 @@ final class NewsTableViewCell: UITableViewCell {
             dateLabel
         }
         
-        backgroundColor = R.color.backgroundWhite()
+        backgroundColor = .clear
         selectionStyle = .none
-//        height(240)
-//        width(343)
         
         coverImage.clipsToBounds = true
         coverImage.contentMode = .scaleAspectFill
